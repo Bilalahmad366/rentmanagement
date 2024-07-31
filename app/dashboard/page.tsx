@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBuilding, faUsers, faDollarSign, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import axiosInstance from '../utils/axiosInstance';
 import "../globals.css";
-// import withAuth from '../utils/withAuth';
+import withAuth from '../utils/withAuth';
 
 const Dashboard = () => {
   const [selectedForm, setSelectedForm] = useState<string | null>(null);
@@ -272,5 +272,6 @@ const Dashboard = () => {
   );
 };
 
-// export default withAuth(Dashboard);
-export default Dashboard;
+export default withAuth(Dashboard);
+// export default Dashboard;
+
